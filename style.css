@@ -1,0 +1,193 @@
+@font-face {
+	font-family: 'Kids'; 
+	src: url('./fonts/Kids.ttf'); 
+}
+
+
+
+*{
+    font-family: 'Kids' ,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    background: black;
+}
+
+.contain{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.anim_content{
+    opacity: 0.2;
+}
+
+.but{
+    margin-top: 200px;
+    width: 200px;
+    height: 50px;
+    background-color: brown;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.del{
+    display: none;
+}
+
+.rumka{
+    position:absolute;
+    width: 150px;
+    height: 155px;
+    background-image: url('./pics/glass.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 1000;
+    background-color: initial;
+}
+.r1{
+    transform: translate(0px, -1000px);
+    transition: transform 1s;
+}
+.anim_r1{
+    transform: translate(-130px, 415px);
+}
+.r2{
+    transform: translate(0px, -1000px);
+    transition: transform 1s;
+}
+.anim_r2{
+    transform: translate(130px, 415px);
+}
+
+.vodka{
+    position:absolute;
+    width: 330px;
+    height: 440px;
+    background-image: url('./pics/vodka.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: initial;
+    z-index: 20;
+    transform: translate(0px, -1000px);
+    transition: transform 1s;
+}
+.anim_vodka{
+    transform: translate(0px, 160px); 
+}
+
+.konyak{
+    position:absolute;
+    width: 400px;
+    height: 400px;
+    background-image: url('./pics/konyak.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: initial;
+    z-index: 10;
+    transform: translate(0px, -1000px);
+    transition: transform 0.8s;
+}
+.anim_konyak{
+    transform: translate(-55px, 175px);
+}
+
+.rom{
+    position:absolute;
+    width: 400px;
+    height: 400px;
+    background-image: url('./pics/rom.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: initial;
+    z-index: 10;
+    transform: translate(0px, -1000px);
+    transition: transform 0.8s;
+}
+.anim_rom{
+    transform: translate(55px, 175px);
+}
+
+.shamp{
+    position:absolute;
+    width: 400px;
+    height: 400px;
+    background-image: url('./pics/shamp.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: initial;
+    z-index: 8;
+    transform: translate(0px, -1000px);
+    transition: transform 0.5s;
+}
+.anim_shamp{
+    transform: translate(-100px, 160px);
+}
+
+.visk{
+    position:absolute;
+    width: 340px;
+    height: 420px;
+    background-image: url('./pics/visk.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: initial;
+    z-index: 8;
+    transform: translate(0px, -1000px);
+    transition: transform 0.5s;
+}
+.anim_visk{
+    transform: translate(120px, 170px);
+}
+
+.txt{
+    text-align: center;
+    color: white;
+    font-size: 3.2rem;
+    position: absolute;
+    background-color: initial;
+    z-index: 200;
+}
+.text1{
+    transform: translate(-1000px, 190px);
+    transition: transform 0.5s;
+}
+.anim_text1{
+    transform: translate(0px, 190px);
+}
+.text2{
+    transform: translate(1000px, 250px);
+    transition: transform 0.5s;
+}
+.anim_text2{
+    transform: translate(0px, 250px);
+}
+
+.zanovo{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    top: 500px;
+    z-index: 300;
+}
